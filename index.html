@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>Album example · Bootstrap v5.3</title>
+    <title>DHT11 Server Webpage</title>
+    <script src="index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-static/">
@@ -200,15 +201,21 @@
       </div>
       </div>
   </div> -->
+  
   <div >
     <img src="images/thermostat.jpg" alt="thermostat" width="100" height="100" style="margin-top: 40px; margin-left: 60px;">
-    <p style="font-size: 30px;position: absolute; top: 325px; left: 140px;">Temperature: ____°</p>
+    <p style="font-size: 30px;position: absolute; top: 325px; left: 140px;">Temperature: <span id="temperatureOutput">70.00</span>°</p>
+    <button id="fButton" onclick="setFahrenheit()" style="background-color: #333; color: #fff; top: 315px; left: 420px; position: absolute; margin-left: 4px; width: 25px;">F</button>
+    <button id="cButton" onclick="setCelsius()" style="background-color: #fff; color: #333; top: 350px; left: 420px; position: absolute; margin-left: 4px; width: 25px;">C</button>
   </div>
 
   <div>
     <img src="images/drop.jpg" alt="drop" width="100" height="100" style="margin-top: 40px; margin-left: 60px;">
     <p style="font-size: 30px;position: absolute; top: 455px; left: 145px;">Humidity: ____%</p>
   </div>
+
+  <!-- <input type="text" id="temperatureInput" value="80" oninput=""> -->
+
   
 
   </main>
