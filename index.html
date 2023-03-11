@@ -87,143 +87,124 @@
   </head>
 <body>
 
-<div id="home">
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Cats</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home" onclick="goHome();">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus" onclick="goAboutUs();">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cats</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home" onclick="goHome();">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutus" onclick="goAboutUs();">About Us</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>    
 </header>
 
-<section>
-  <h1 style="text-align: center;">Types of Cats</h1>
-</section>
 
-<main>
-  <div class="album py-5 bg-light">
-    <div class="container">
+<div id="home">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/savannah.jpeg" alt="savannah">
-            <div class="card-body">
-              <p class="card-text">The Savannah is a breed of hybrid cat developed in the late 20th century from crossing a serval (Leptailurus serval) with a domestic cat (Felis catus).</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/hairless_sphynx.jpg" alt="hairless_sphynx">
-            <div class="card-body">
-              <p class="card-text">The Sphynx cat (pronounced SFINGKS) also known as the Canadian Sphynx, is a breed of cat known for its lack of fur. Hairlessness in cats is a naturally occurring genetic mutation, and the Sphynx was developed through selective breeding of these animals, starting in the 1960s.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/scottish_fold.jpg" alt="scottish_fold">
-            <div class="card-body">
-              <p class="card-text">The Scottish Fold is a breed of domestic cat with a natural dominant gene mutation that affects cartilage throughout the body, causing the ears to "fold", bending forward and down towards the front of the head, which gives the cat what is often described as an "owl-like" appearance.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/grey_domestic_shorthair.png" alt="grey_domestic_shorthair">
-            <div class="card-body">
-              <p class="card-text">A domestic short-haired cat is a cat possessing a coat of short fur, not belonging to any particular recognised cat breed. In Britain they are sometimes colloquially called moggies.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+    </section>
+
+    <main>
+    <!-- <div class="album py-5 bg-light">
+        <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="images/savannah.jpeg" alt="savannah">
+                <div class="card-body">
+                <p class="card-text">The Savannah is a breed of hybrid cat developed in the late 20th century from crossing a serval (Leptailurus serval) with a domestic cat (Felis catus).</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/caracals.jpg" alt="caracals">
-            <div class="card-body">
-              <p class="card-text">The caracal (Caracal caracal) is a medium-sized wild cat native to Africa, the Middle East, Central Asia, and arid areas of Pakistan and northwestern India. It is characterised by a robust build, long legs, a short face, long tufted ears, and long canine teeth.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
-          </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="images/hairless_sphynx.jpg" alt="hairless_sphynx">
+                <div class="card-body">
+                <p class="card-text">The Sphynx cat (pronounced SFINGKS) also known as the Canadian Sphynx, is a breed of cat known for its lack of fur. Hairlessness in cats is a naturally occurring genetic mutation, and the Sphynx was developed through selective breeding of these animals, starting in the 1960s.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="images/scottish_fold.jpg" alt="scottish_fold">
+                <div class="card-body">
+                <p class="card-text">The Scottish Fold is a breed of domestic cat with a natural dominant gene mutation that affects cartilage throughout the body, causing the ears to "fold", bending forward and down towards the front of the head, which gives the cat what is often described as an "owl-like" appearance.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="images/grey_domestic_shorthair.png" alt="grey_domestic_shorthair">
+                <div class="card-body">
+                <p class="card-text">A domestic short-haired cat is a cat possessing a coat of short fur, not belonging to any particular recognised cat breed. In Britain they are sometimes colloquially called moggies.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card shadow-sm">
+                <img src="images/caracals.jpg" alt="caracals">
+                <div class="card-body">
+                <p class="card-text">The caracal (Caracal caracal) is a medium-sized wild cat native to Africa, the Middle East, Central Asia, and arid areas of Pakistan and northwestern India. It is characterised by a robust build, long legs, a short face, long tufted ears, and long canine teeth.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</main>
+        </div>
+    </div> -->
+    </main>
 </div>
 
 
 
 <div id="aboutus" style="display:none">
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cats</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#home" onclick="goHome();">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#aboutus" onclick="goAboutUs();">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>    
-  </header>
-
   <section>
     <h1 style="text-align: center;">About Us</h1>
   </section>
@@ -256,45 +237,10 @@
         <a href="#">Back to top</a>
       </p>
       <p class="mb-1">This album is made by Brian Xicon and Jackson Vanderheyden, more information about us can be found <a href="#aboutus" onclick="goAboutUs();">here</a>.</p>
-      <p class="mb-0">Learn more about <a href="https://en.wikipedia.org/wiki/Cat">cats</a>.</p>
     </div>
   </footer>
 
 </div>
-
-<!-- <header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Cats</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header> -->
-
-
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
