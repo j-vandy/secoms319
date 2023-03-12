@@ -41,10 +41,18 @@ function setCelsius() {
 function goHome() {
   document.getElementById("home").style.display = 'block';
   document.getElementById("aboutus").style.display = 'none';
+  document.getElementById("third").style.display = 'none';
   return false;
 }
 function goAboutUs() {
   document.getElementById("aboutus").style.display = 'block';
+  document.getElementById("home").style.display = 'none';
+  document.getElementById("third").style.display = 'none';
+  return false;
+}
+function goThird() {
+  document.getElementById("third").style.display = 'block';
+  document.getElementById("aboutus").style.display = 'none';
   document.getElementById("home").style.display = 'none';
   return false;
 }
