@@ -77,21 +77,25 @@ function changeDrop(){
 
     var image = document.getElementById("dropImg")
 
-    if(humidity <= 25)
+    if(humidity <= 10)
     {
-      image.src = "images/thermostatblue.jpg";
+      image.src = "images/drop.jpg";
+    }
+    else if(humidity <= 25)
+    {
+      image.src = "images/drop25.jpg";
     }
     else if (humidity <= 50)
     {
-      image.src = "images/thermostatorange.jpg";
+      image.src = "images/drop50.jpg";
     }
     else if (humidity <= 75)
     {
-      image.src = "images/thermostatred.jpg";
+      image.src = "images/drop75.jpg";
     }
     else
     {
-      image.src = "images/thermostatred.jpg";
+      image.src = "images/drop100.jpg";
     }
   })
   .catch(error => console.error(error));
