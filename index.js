@@ -114,8 +114,8 @@ function goAboutUs() {
   return false;
 }
 function goThird() {
-  document.getElementById("third").style.display = 'block';
+  document.getElementById("home").style.display = 'none';
   document.getElementById("aboutus").style.display = 'none';
-  document.getElementById("studentinfo").style.display = 'none';
+  document.getElementById("studentinfo").style.display = 'block';
   return false;
 }
