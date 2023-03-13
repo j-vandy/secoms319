@@ -1,19 +1,14 @@
 let isFahrenheit = true;
 
 function convertTemperature() {
-  const temperatureInput = document.getElementById('temperatureInput');
   const temperatureOutput = document.getElementById('temperatureOutput');
 
-  if (isFahrenheit) {
-    const fahrenheit = parseFloat(temperatureInput.value);
-    const celsius = (fahrenheit - 32) * 5 / 9;
-    temperatureOutput.innerHTML = celsius.toFixed(2);
-  }
-  else {
-    const celsius = parseFloat(temperatureInput.value);
-    const fahrenheit = (celsius * 9 / 5) + 32;
-    temperatureOutput.innerHTML = fahrenheit.toFixed(2);
-  }
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      const temperature = isFahrenheit ? data.temperature_f : data.temperature_c;
+      temperatureOutput.innerHTML = temperature.toFixed(2);
+    })
 }
 
 function setFahrenheit() {
@@ -36,6 +31,70 @@ function setCelsius() {
   fButton.style.backgroundColor = '#fff';
   fButton.style.color = '#333';
   convertTemperature();
+}
+
+function addHumidity(){
+  const humidityOutput = document.getElementById('humidityOutput');
+
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      const humidity = data.humidity;
+      humidityOutput.innerHTML = humidity.toFixed(2);
+    })
+    .catch(error => console.error(error));
+}
+
+function changeThermostat(){
+  fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const temperature = data.temperature_f;
+
+    var image = document.getElementById("thermoImg")
+
+    if(temperature <= 50)
+    {
+      image.src = "images/thermostatblue.jpg";
+    }
+    else if (temperature <= 70)
+    {
+      image.src = "images/thermostatorange.jpg";
+    }
+    else
+    {
+      image.src = "images/thermostatred.jpg";
+    }
+  })
+  .catch(error => console.error(error));
+}
+
+function changeDrop(){
+  fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const humidity = data.humidity;
+
+    var image = document.getElementById("dropImg")
+
+    if(humidity <= 25)
+    {
+      image.src = "images/thermostatblue.jpg";
+    }
+    else if (humidity <= 50)
+    {
+      image.src = "images/thermostatorange.jpg";
+    }
+    else if (humidity <= 75)
+    {
+      image.src = "images/thermostatred.jpg";
+    }
+    else
+    {
+      image.src = "images/thermostatred.jpg";
+    }
+  })
+  .catch(error => console.error(error));
 }
 
 function goHome() {
